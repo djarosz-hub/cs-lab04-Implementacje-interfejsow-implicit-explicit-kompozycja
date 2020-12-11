@@ -51,6 +51,6 @@ namespace ver1
     }
     public interface IFax : IDevice
     {
-
+        void Fax(string reciever);
     }
 }

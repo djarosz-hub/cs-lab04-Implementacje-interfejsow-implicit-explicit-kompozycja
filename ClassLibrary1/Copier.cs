@@ -62,7 +62,6 @@ namespace ClassLibrary1
         {
             if (state == IDevice.State.on)
             {
-                //IDocument tempDoc;
                 Scan(out IDocument document);
                 Print(in document);
             }
