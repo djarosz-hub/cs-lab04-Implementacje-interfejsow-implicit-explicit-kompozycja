@@ -7,7 +7,7 @@ namespace ClassLibrary3
     public class MultidimensionalDevice : Copier
     {
         public int FaxCounter => _Fax.FaxCounter;
-        private readonly FaxDevice _Fax;
+        public readonly FaxDevice _Fax;
         public MultidimensionalDevice()
         {
             _Fax = new FaxDevice();
