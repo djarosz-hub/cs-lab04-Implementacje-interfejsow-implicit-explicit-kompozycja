@@ -22,7 +22,7 @@ namespace ClassLibrary4
 
         void IDevice.SetState(IDevice.State state)
         {
-            if (state == IDevice.State.on)
+            if (state == IDevice.State.on && this.state == IDevice.State.off)
                 Counter++;
             this.state = state;
             IPrinter.PrinterState = state;
